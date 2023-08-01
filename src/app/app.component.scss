@@ -1,20 +1,34 @@
+
+
 .example-spacer {
     flex: 1 1 auto;
   }
   mat-toolbar{
+    background-color:#9b59b6 ;
     span{
         font-size: x-large;
         font-weight: 550;
+        font-family: Exo2;
+        
     }
   }
   .main-body{
     padding-top: 20px;
     margin: 0 auto;
-    max-width: 1248px;
+    max-width: 1180px;
     mat-form-field {
         font-size: 14px;
         width: 80%;
         padding-right: 10%;
+        
+      }
+      .fliter{
+        max-width: 1200px;
+        background-color: aqua;
+      }
+      .download{
+        height:52px;
+        margin-bottom: 14px;
       }
       
   }
@@ -47,4 +61,36 @@
   td, th {
     width: 25%;
   }
-  
+  @media screen and (max-width: 768px) {
+    /* Styles for small screens (e.g., mobile devices) */
+    mat-form-field {
+      width: 100%;
+    }
+    .main-body{
+      max-width: 407px;
+    }
+
+    /* Adjust the font size, padding, etc. for better mobile view */
+    table {
+      font-size: 14px;
+    }
+
+    th.mat-header-cell,
+    td.mat-cell {
+      padding: 8px 16px;
+    }
+
+    td.mat-cell {
+      white-space: nowrap; /* Prevent cell content from wrapping */
+    }
+
+    /* Center align the text in header cells */
+    th.mat-header-cell {
+      text-align: center;
+    }
+
+    /* Center align the text in data cells */
+    td.mat-cell {
+      text-align: center;
+    }
+  }

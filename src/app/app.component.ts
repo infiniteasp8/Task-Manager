@@ -86,6 +86,16 @@ applyFilter(event: Event) {
       },
     });
   }
+  
+     currentStatus: string = 'To-Do';
+    statuses: string[] = ['To-Do', 'In Progress', 'Completed'];
+  currentIndex: number = 0;
+
+  toggleStatus(): void {
+    this.currentIndex = (this.currentIndex + 1) % this.statuses.length;
+    this.currentStatus = this.statuses[this.currentIndex];
+    console.log('Current Status:', this.currentStatus);}
+  
 
 }
 

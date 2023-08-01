@@ -1,4 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body { height: 100%; 
+
+   
+  /* Add a transition property to smoothly change the background color */
+  
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+    background: linear-gradient(135deg, #f8e9a1, #1abc9c, #f2d49f);
+    transition: background 0.5s ease;
+}

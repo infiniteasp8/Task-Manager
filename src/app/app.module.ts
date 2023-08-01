@@ -24,10 +24,13 @@ import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MatSort, MatSortModule } from '@angular/material/sort';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { MatTableExporterModule } from 'mat-table-exporter';
+import { ToggleButtonComponent } from './toggle-button/toggle-button.component';
 @NgModule({
   declarations: [
     AppComponent,
-    TaskAddEditComponent
+    TaskAddEditComponent,
+    ToggleButtonComponent,
+
   ],
   imports: [
     BrowserModule,

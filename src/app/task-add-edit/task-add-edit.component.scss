@@ -7,13 +7,15 @@
     align-items: flex-start;
 }
 
+
 .titletask{
     
     h1{ 
-        color: rgb(23, 93, 117);
-        font-weight: 400;
+        color: #673ab7;
         padding-top: 25px;
-    padding-left: 40px;
+        font-weight: 500;
+        padding-left: 40px;
+        text-shadow: black;
     }
     display: flex;
     column-gap: 200px;
